@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CheckCalculator</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="language_changing">Changer de langue</string>
+    <string name="english">English</string>
+    <string name="ukranian">Український</string>
+    <string name="french">Français</string>
+    <string name="russian">Русский</string>
+
+    <string-array name="restaurant_ethics">
+        <item>Asseyez-vous à table à l\'aise, mais ne vous effondrez pas, ne mettez pas vos coudes sur le comptoir. Selon les règles, la distance entre la table et vous devrait être d\'une paume.</item>
+        <item>Pour parler avec une personne assise à côté de vous, vous n\'avez pas besoin de vous retourner vers elle de tout votre corps.</item>
+        <item>Les messieurs doivent enlever leur chapeau, les femmes peuvent s\'asseoir à table avec un chapeau, mais il est nécessaire d\'enlever leurs gants.</item>
+        <item>Il est préférable de couper la viande ou le poisson un morceau à la fois et de le manger, plutôt que de tout couper d\'un coup.</item>
+        <item>Les dames peuvent se teinter les lèvres ou se poudrer le nez après le repas.</item>
+        <item>Ne ramassez pas une fourchette ou un couteau tombé accidentellement. Demandez simplement un nouvel appareil.</item>
+    </string-array>
+
+    <!--Check Data Activity strings-->
+    <string name="add_image">Ajouter l\'image</string>
+    <string name="my_dishes">Mes plats</string>
+    <string name="total">Total:</string>
+    <string name="finish_button">Finir</string>
+
+    <!--Forgot Password Activity strings-->
+    <string name="title_forgot_pass">Mot de passe oublié?</string>
+    <string name="sub_title_forgot_pass">Entrez votre email ci-dessous, pour avoir la possibilité de vous envoyer le lien de réparation du mot de passe</string>
+    <string name="send_button">Envoyer</string>
+
+    <!--User Info-->
+    <string name="email">Email</string>
+    <string name="password">Mot de passe</string>
+    <string name="name">Nom</string>
+    <string name="country">De campagne</string>
+
+    <!--Login Activity strings-->'
+    <string name="login_button">Connexion</string>
+    <string name="do_not_have_ac">Vous n\'avez pas de compte?</string>
+    <string name="signup_text">S\'inscrire!</string>
+    <string name="title_welcome">Bon retour à</string>
+    <string name="title_app_logo">CheckCalculator App</string>
+
+    <!--Main Activity strings-->
+    <string name="greeting">Hé,</string>
+
+    <!--Person Data Activity-->
+    <string name="follow_button">Suivre</string>
+    <string name="sub_title_about_me">Sur moi</string>
+
+    <!--Profile Activity strings-->
+    <string name="edit_profile_button">Editer le profil</string>
+    <string name="log_out_button">Se déconnecter</string>
+
+    <!--Register Activity strings-->
+    <string name="signup_button">S\'inscrire</string>
+    <string name="create_ac_text">Créer un nouveau</string>
+    <string name="ac_text">Compte</string>
+
+    <!--Update Activity strings-->
+    <string name="update_button">Mise à jour</string>
+
+    <!--Check Connection alert dialog-->
+    <string name="title_text_check_internet_connection">Vérifiez votre connection internet</string>
+    <string name="sub_title_text_check_internet_connection">Une erreur s\'est produite lors du chargement des données.</string>
+    <string name="exit_button">Sortir</string>
+    <string name="settings_button">Réglages</string>
+
+    <!--Quit alert dialog-->
+    <string name="title_text_quit">Quitter</string>
+    <string name="sub_title_text_quit">Voulez-vous vraiment quitter l\'application?</string>
+    <string name="no_button">Non</string>
+    <string name="yes_button">Oui</string>
+
+    <!--Bottom dialog check addition-->
+    <string name="field_restaurant">Le restaurant</string>
+    <string name="title_check_addition">Vérifier l\'ajout</string>
+    <string name="cancel_button">Annuler</string>
+    <string name="add_button">Ajouter</string>
+
+    <!--Bottom dialog dish addition-->
+    <string name="title_dish_addition">Ajout de plat</string>
+    <string name="field_dish">Assiette</string>
+    <string name="field_price">Prix</string>
+
+    <!--Bottom dialog settings-->
+    <string name="sub_title_share">Partager l\'application</string>
+    <string name="sub_title_feedback">Retour</string>
+    <string name="sub_title_mode">Thème de la nuit</string>
+
+    <!--Fragments-->
+    <!--Check-->
+    <string name="title_all_checks">Tous les chèques</string>
+    <string name="sub_title_advices">Conseille</string>
+    <string name="advice_one">N\'acceptez pas les demandes des utilisateurs, vous ne savez pas</string>
+    <string name="advice_two">Commentez et insérez l\'image aux restaurants, vous avez été</string>
+    <string name="add_check_button">Ajouter un chèque</string>
+    <!--Friends-->
+    <string name="title_friends">Amies/Amis</string>
+    <string name="sub_title_requests">Demandes</string>
+    <!--Restaurants-->
+    <string name="title_question">Où allons-nous\naujourd\'hui ?</string>
+    <string name="restaurant_ethics">Éthique de la restauration</string>
+    <string name="sub_title_restaurants">Restaurants populaires</string>
+
+    <!--Items-->
+    <string name="accept_button">Accepter</string>
+    <string name="deny_button">Refuser</string>
+    <string name="request_text">veut être votre ami</string>
+    <string name="tag_check">#Chèque</string>
+
+</resources>

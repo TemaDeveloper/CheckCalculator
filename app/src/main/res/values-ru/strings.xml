@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CheckCalculator</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="language_changing">Изменить Язык</string>
+    <string name="english">English</string>
+    <string name="ukranian">Український</string>
+    <string name="french">Français</string>
+    <string name="russian">Русский</string>
+
+    <string-array name="restaurant_ethics">
+        <item>Сядьте за стол непринужденно, но не разваливайтесь, не кладите локти на столешницу. По правилам расстояние между столом и вами должно составлять одну ладонь.</item>
+        <item>Чтобы поговорить с человеком, сидящим рядом с вами, не нужно поворачиваться к нему всем телом.</item>
+        <item>Джентльмены должны снять шляпы, женщины могут сидеть за столом в шляпе, но обязательно нужно снять перчатки.</item>
+        <item>Мясо или рыбу лучше резать по кусочку и есть, чем резать все сразу.</item>
+        <item>Дамы могут подкрасить губы или припудрить нос после еды.</item>
+        <item>Не поднимайте случайно упавшую вилку или нож. Просто попросите новый прибор.</item>
+    </string-array>
+
+    <!--Check Data Activity strings-->
+    <string name="add_image">Добавить Картинку</string>
+    <string name="my_dishes">Мои Блюда</string>
+    <string name="total">Общий счет:</string>
+    <string name="finish_button">Закончить</string>
+
+    <!--Forgot Password Activity strings-->
+    <string name="title_forgot_pass">Забыли Пароль?</string>
+    <string name="sub_title_forgot_pass">Введите ваш email ниже, чтобы ваш пароль был успешно отправлен к вам на почту</string>
+    <string name="send_button">Отправить</string>
+
+    <!--User Info-->
+    <string name="email">Email</string>
+    <string name="password">Пароль</string>
+    <string name="name">Имя</string>
+    <string name="country">Страна</string>
+
+    <!--Login Activity strings-->'
+    <string name="login_button">Войти</string>
+    <string name="do_not_have_ac">У вас нет аккаунта?</string>
+    <string name="signup_text">Зарегистрируйтесь!</string>
+    <string name="title_welcome">С Возвращением</string>
+    <string name="title_app_logo">CheckCalculator App</string>
+
+    <!--Main Activity strings-->
+    <string name="greeting">Привет,</string>
+
+    <!--Person Data Activity-->
+    <string name="follow_button">Подписаться</string>
+    <string name="sub_title_about_me">Обо мне</string>
+
+    <!--Profile Activity strings-->
+    <string name="edit_profile_button">Редактировать Профиль</string>
+    <string name="log_out_button">Выйти из аккаунта</string>
+
+    <!--Register Activity strings-->
+    <string name="signup_button">Готово</string>
+    <string name="create_ac_text">Создать Новый</string>
+    <string name="ac_text">Аккаунт</string>
+
+    <!--Update Activity strings-->
+    <string name="update_button">Обновить</string>
+
+    <!--Check Connection alert dialog-->
+    <string name="title_text_check_internet_connection">Проверьте вашу связь с интернетом</string>
+    <string name="sub_title_text_check_internet_connection">Упс, Что-то пошло не так при загрузке данных</string>
+    <string name="exit_button">Выйти</string>
+    <string name="settings_button">Настройки</string>
+
+    <!--Quit alert dialog-->
+    <string name="title_text_quit">Выйти</string>
+    <string name="sub_title_text_quit">Вы действительно хотите выйти из приложения?</string>
+    <string name="no_button">Нет</string>
+    <string name="yes_button">Да</string>
+
+    <!--Bottom dialog check addition-->
+    <string name="field_restaurant">Ресторан</string>
+    <string name="title_check_addition">Добавьте Чек</string>
+    <string name="cancel_button">Отменить</string>
+    <string name="add_button">Добавить</string>
+
+    <!--Bottom dialog dish addition-->
+    <string name="title_dish_addition">Добавьте Блюдо</string>
+    <string name="field_dish">Блюдо</string>
+    <string name="field_price">Цена</string>
+
+    <!--Bottom dialog settings-->
+    <string name="sub_title_share">Поделиться приложением</string>
+    <string name="sub_title_feedback">Обратная связь</string>
+    <string name="sub_title_mode">Ночная тема</string>
+
+    <!--Fragments-->
+    <!--Check-->
+    <string name="title_all_checks">Все Чеки</string>
+    <string name="sub_title_advices">Советы</string>
+    <string name="advice_one">Не принимайте запросы от пользователей, которых вы не знаете</string>
+    <string name="advice_two">Комментируй и добавляй картинки к ресторанам, в которых вы были</string>
+    <string name="add_check_button">Добавить чек</string>
+    <!--Friends-->
+    <string name="title_friends">Друзья</string>
+    <string name="sub_title_requests">Запросы</string>
+    <!--Restaurants-->
+    <string name="title_question">Куда мы держим\nпуть сегодня?</string>
+    <string name="restaurant_ethics">Ресторанная Этика</string>
+    <string name="sub_title_restaurants">Популярные Рестораны</string>
+
+    <!--Items-->
+    <string name="accept_button">Принять</string>
+    <string name="deny_button">Отклонить</string>
+    <string name="request_text">хочет стать твоим другом</string>
+    <string name="tag_check">#Чек</string>
+
+</resources>

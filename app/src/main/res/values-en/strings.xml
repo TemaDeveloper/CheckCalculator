@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CheckCalculator</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="language_changing">Change Language</string>
+    <string name="english">English</string>
+    <string name="ukranian">Український</string>
+    <string name="french">Français</string>
+    <string name="russian">Русский</string>
+
+    <string-array name="restaurant_ethics">
+        <item>Sit at the table at ease, but do not fall apart, do not put your elbows on the countertop. According to the rules, the distance between the table and you should be one palm.</item>
+        <item>To talk with a person sitting next to you, you do not need to turn around to him with your whole body.</item>
+        <item>Gentlemen must take off their hats, women can sit at the table with a hat, but it is necessary to take off their gloves.</item>
+        <item>It is better to cut meat or fish one piece at a time and eat, rather than cut everything at once.</item>
+        <item>Ladies can tint their lips or powder their nose after the meal.</item>
+        <item>Do not pick up a fork or knife that has been accidentally dropped. Just ask for a new appliance.</item>
+    </string-array>
+
+    <!--Check Data Activity strings-->
+    <string name="add_image">Add the Image</string>
+    <string name="my_dishes">My Dishes</string>
+    <string name="total">Total:</string>
+    <string name="finish_button">Finish</string>
+
+    <!--Forgot Password Activity strings-->
+    <string name="title_forgot_pass">Forgot Password?</string>
+    <string name="sub_title_forgot_pass">Enter your email below, to provide the possibility to send you the link of repairing password</string>
+    <string name="send_button">Send</string>
+
+    <!--User Info-->
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="country">Country</string>
+
+    <!--Login Activity strings-->'
+    <string name="login_button">Log in</string>
+    <string name="do_not_have_ac">Do not have an account?</string>
+    <string name="signup_text">Sign up!</string>
+    <string name="title_welcome">Welcome back to</string>
+    <string name="title_app_logo">CheckCalculator App</string>
+
+    <!--Main Activity strings-->
+    <string name="greeting">Hey,</string>
+
+    <!--Person Data Activity-->
+    <string name="follow_button">Follow</string>
+    <string name="sub_title_about_me">About me</string>
+
+    <!--Profile Activity strings-->
+    <string name="edit_profile_button">Edit Profile</string>
+    <string name="log_out_button">Log out</string>
+
+    <!--Register Activity strings-->
+    <string name="signup_button">Sign up</string>
+    <string name="create_ac_text">Create New</string>
+    <string name="ac_text">Account</string>
+
+    <!--Update Activity strings-->
+    <string name="update_button">Update</string>
+
+    <!--Check Connection alert dialog-->
+    <string name="title_text_check_internet_connection">Check Your Internet Connection</string>
+    <string name="sub_title_text_check_internet_connection">Something went wrong, loading data.</string>
+    <string name="exit_button">Exit</string>
+    <string name="settings_button">Settings</string>
+
+    <!--Quit alert dialog-->
+    <string name="title_text_quit">Quit</string>
+    <string name="sub_title_text_quit">Do you really want to quit the app?</string>
+    <string name="no_button">No</string>
+    <string name="yes_button">Yes</string>
+
+    <!--Bottom dialog check addition-->
+    <string name="field_restaurant">Restaurant</string>
+    <string name="title_check_addition">Check Addition</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="add_button">Add</string>
+
+    <!--Bottom dialog dish addition-->
+    <string name="title_dish_addition">Dish Addition</string>
+    <string name="field_dish">Dish</string>
+    <string name="field_price">Price</string>
+
+    <!--Bottom dialog settings-->
+    <string name="sub_title_share">Share app</string>
+    <string name="sub_title_feedback">Feedback</string>
+    <string name="sub_title_mode">Night theme</string>
+
+    <!--Fragments-->
+    <!--Check-->
+    <string name="title_all_checks">All Checks</string>
+    <string name="sub_title_advices">Advises</string>
+    <string name="advice_one">Do not accept requests of users, you do not know</string>
+    <string name="advice_two">Comment and insert image to the restaurants, you have been</string>
+    <string name="add_check_button">Add Check</string>
+    <!--Friends-->
+    <string name="title_friends">Friends</string>
+    <string name="sub_title_requests">Requests</string>
+    <!--Restaurants-->
+    <string name="title_question">Where are we\ngoing today?</string>
+    <string name="restaurant_ethics">Restaurant Ethics</string>
+    <string name="sub_title_restaurants">Popular Restaurants</string>
+
+    <!--Items-->
+    <string name="accept_button">Accept</string>
+    <string name="deny_button">Deny</string>
+    <string name="request_text">wants to be your friend</string>
+    <string name="tag_check">#Check</string>
+
+</resources>
