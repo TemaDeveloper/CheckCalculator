@@ -54,7 +54,7 @@
         <entry key="app/src/main/res/font/casual.xml" value="0.45042735042735044" />
         <entry key="app/src/main/res/font/nunito.xml" value="0.45042735042735044" />
         <entry key="app/src/main/res/layout/activity_check_addition.xml" value="0.4247863247863248" />
-        <entry key="app/src/main/res/layout/activity_check_data.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_check_data.xml" value="0.5" />
         <entry key="app/src/main/res/layout/activity_forget_password.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
@@ -71,6 +71,7 @@
         <entry key="app/src/main/res/layout/demo.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_bottom_sheet_add_check.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_bottom_sheet_addition_dish.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_bottom_sheet_addition_friend.xml" value="0.48504273504273504" />
         <entry key="app/src/main/res/layout/fragment_bottom_sheet_settings.xml" value="0.5" />
         <entry key="app/src/main/res/layout/fragment_check.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_friends.xml" value="0.25" />
@@ -83,7 +84,7 @@
         <entry key="app/src/main/res/layout/item_check.xml" value="0.33" />
         <entry key="app/src/main/res/layout/item_dish.xml" value="0.4247863247863248" />
         <entry key="app/src/main/res/layout/item_friend.xml" value="0.335" />
-        <entry key="app/src/main/res/layout/item_friend_in_team_check.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/item_friend_in_team_check.xml" value="0.33" />
         <entry key="app/src/main/res/layout/item_friend_request.xml" value="0.5" />
         <entry key="app/src/main/res/layout/item_pre_search.xml" value="0.4247863247863248" />
         <entry key="app/src/main/res/layout/item_recent_team.xml" value="0.25" />

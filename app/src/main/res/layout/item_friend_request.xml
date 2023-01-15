@@ -71,6 +71,7 @@
             app:tint="@color/white" />
 
         <TextView
+            android:id="@+id/text_view_deny"
             android:textColor="@color/red"
             android:textSize="16sp"
             android:textStyle="bold"

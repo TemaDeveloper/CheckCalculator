@@ -31,7 +31,7 @@ public class AdapterDish extends RecyclerView.Adapter<AdapterDish.ViewHolderDish
     @Override
     public void onBindViewHolder(@NonNull ViewHolderDish holder, int position) {
         holder.dishName.setText(dishes.get(position).getDishName());
-        holder.dishPrice.setText(dishes.get(position).getPrice());
+        holder.dishPrice.setText(dishes.get(position).getPrice() + "$");
     }
 
     @Override

@@ -67,4 +67,7 @@ public interface ApiInterface {
     @POST("friends.php")
     Call<List<Friend>> getFriends(@Field("user_id") int user_id, @Field("my_id") int my_id);
 
+    @GET("denyRequest.php")
+    Call<List<Friend>> getDenyRequest(@Query("id") int id, @Query("request") int request);
+
 }

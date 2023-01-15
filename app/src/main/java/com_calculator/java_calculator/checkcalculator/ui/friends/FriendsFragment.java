@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import com_calculator.java_calculator.checkcalculator.R;
@@ -108,6 +109,7 @@ public class FriendsFragment extends Fragment implements RecyclerViewBuilder {
             @Override
             public void onResponse(Call<List<Friend>> call, Response<List<Friend>> response) {
                 friends = response.body();
+                Collections.shuffle(friends);
                 recyclerViewFriends.setAdapter(new AdapterFriends(getContext(), friends));
             }
 

@@ -20,6 +20,7 @@ import com.google.android.material.floatingactionbutton.ExtendedFloatingActionBu
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 import com_calculator.java_calculator.checkcalculator.adapters.AdapterCheck;
 import com_calculator.java_calculator.checkcalculator.adapters.AdapterRestaurant;
@@ -50,11 +51,9 @@ public class CheckFragment extends Fragment implements BottomSheetAdditionCheckF
         View root = binding.getRoot();
 
         init(root);
-        insertArrayLists();
-        buildRecyclerView();
         setUpTabsWithViewPager();
         transformViewPager();
-
+        buildRecyclerView();
         fabAddCheck.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -99,15 +98,6 @@ public class CheckFragment extends Fragment implements BottomSheetAdditionCheckF
         });
     }
 
-    private void insertArrayLists(){
-        //check
-        checks.add(new Check("Am!Bar.", "Today", true));
-        checks.add(new Check("Parmezan", "22.10.21", false));
-        checks.add(new Check("Cafe coffee only here", "12.09.21", false));
-        checks.add(new Check("Shaurma Bistro", "11.08.21", false));
-        checks.add(new Check("NicePriceCafe", "06.01.21", false));
-    }
-
     private void init(View root){
         //widgets
         recyclerViewChecks = root.findViewById(R.id.recycler_view_checks);
@@ -115,6 +105,11 @@ public class CheckFragment extends Fragment implements BottomSheetAdditionCheckF
         tabIndicator =  root.findViewById(R.id.tab_indicator);
         //arrayList
         checks = new ArrayList<>();
+        checks.add(new Check("Parmezan", "22.10.21", false));
+        checks.add(new Check("Cafe coffee only here", "12.09.21", false));
+        checks.add(new Check("Shaurma Bistro", "11.08.21", false));
+        checks.add(new Check("NicePriceCafe", "06.01.21", false));
+
     }
 
     @Override
@@ -125,7 +120,10 @@ public class CheckFragment extends Fragment implements BottomSheetAdditionCheckF
 
     @Override
     public void sendInput(String check) {
-
+        checks.add(new Check(check, "Today", true));
+        tabIndicator.addTab(tabIndicator.newTab().setText(""));
+        Collections.rotate(checks, 1);
+        buildRecyclerView();
     }
 
     @Override

@@ -35,7 +35,7 @@ public class PersonDataActivity extends AppCompatActivity {
     private String name_holder, country_holder, about_holder, image_holder, id_holder;
     //Widgets
     private TextView name, country, about;
-    private ImageView userImage, userImageBackground;
+    private ImageView userImage, userImageBackground, back;
     private MaterialButton followButton;
     //Api Interface
     private ApiInterface apiInterface;
@@ -105,7 +105,7 @@ public class PersonDataActivity extends AppCompatActivity {
         apiInterface = ApiClient.getApiClient().create(ApiInterface.class);
         int idOfUser = Integer.parseInt(id_holder);
         int id = SharedPrefManager.getInstance(PersonDataActivity.this).getUser().getId();
-        Call<List<Friend>> friendCall = apiInterface.getFriends(id, id);
+        Call<List<Friend>> friendCall = apiInterface.getFriends(idOfUser, id);
         friendCall.enqueue(new Callback<List<Friend>>() {
             @Override
             public void onResponse(Call<List<Friend>> call, Response<List<Friend>> response) {
@@ -115,9 +115,7 @@ public class PersonDataActivity extends AppCompatActivity {
                         followButton.setBackgroundColor(getResources().getColor(R.color.white));
                         followButton.setTextColor(getResources().getColor(R.color.purple_200));
                         followButton.setText("Followed");
-                        Log.d("ID_TAG_F", friend.getMy_id() + " - my_id" + " ID WE GO INTENT " + idOfUser);
-                        Log.d("ID_TAG_F", friend.getUser_id() + " - user_id");
-                    }else{
+                    }if((idOfUser != friend.getMy_id() && id != friend.getUser_id()) && (idOfUser != friend.getUser_id() && id != friend.getMy_id())){
                         followButton.setBackgroundColor(getResources().getColor(R.color.purple_200));
                         followButton.setTextColor(getResources().getColor(R.color.white));
                         followButton.setText("Follow");
@@ -146,6 +144,7 @@ public class PersonDataActivity extends AppCompatActivity {
         userImage = findViewById(R.id.image_view_user);
         userImageBackground = findViewById(R.id.image_view_user_background);
         followButton = findViewById(R.id.button_follow);
+        back = findViewById(R.id.image_view_back);
     }
 
     private void setUpUri(ImageView image) {

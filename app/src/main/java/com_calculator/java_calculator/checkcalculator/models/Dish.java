@@ -2,9 +2,10 @@ package com_calculator.java_calculator.checkcalculator.models;
 
 public class Dish {
 
-    private String dishName, price;
+    private String dishName;
+    private int price;
 
-    public Dish(String dishName, String price) {
+    public Dish(String dishName, int price) {
         this.dishName = dishName;
         this.price = price;
     }
@@ -13,7 +14,7 @@ public class Dish {
         return dishName;
     }
 
-    public String getPrice() {
+    public int getPrice() {
         return price;
     }
 }

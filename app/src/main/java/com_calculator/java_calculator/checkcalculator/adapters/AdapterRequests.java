@@ -50,6 +50,7 @@ public class AdapterRequests extends RecyclerView.Adapter<AdapterRequests.ViewHo
     public void onBindViewHolder(@NonNull ViewHolderRequests holder, int position) {
 
         ApiInterface apiInterface = ApiClient.getApiClient().create(ApiInterface.class);
+        Call<List<Friend>> callRequests = apiInterface.getDenyRequest(friends.get(position).getId(), 1);
         Call<ResponseBody> callUpdateFriend = apiInterface.updateFriend(friends.get(position).getId(), 0);
 
         holder.name.setText(friends.get(position).getName());
@@ -64,21 +65,36 @@ public class AdapterRequests extends RecyclerView.Adapter<AdapterRequests.ViewHo
         holder.acceptButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //update friends_table ==> request = 0 => move to friend list
-
                 callUpdateFriend.enqueue(new Callback<ResponseBody>() {
                     @Override
                     public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
-                        Toast.makeText(context, "Success YEAÄA!HH " + response.message() + " ", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(context, "Friend was Added", Toast.LENGTH_SHORT).show();
                     }
 
                     @Override
                     public void onFailure(Call<ResponseBody> call, Throwable t) {
-
+                        Toast.makeText(context, "Something went wrong", Toast.LENGTH_SHORT).show();
                     }
                 });
             }
         });
+
+        holder.deny.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                callRequests.enqueue(new Callback<List<Friend>>() {
+                    @Override
+                    public void onResponse(Call<List<Friend>> call, Response<List<Friend>> response) {
+                        Toast.makeText(context, "The Request was Denied", Toast.LENGTH_SHORT).show();
+                    }
+
+                    @Override
+                    public void onFailure(Call<List<Friend>> call, Throwable t) {
+                    }
+                });
+            }
+        });
+
     }
 
     @Override
@@ -88,14 +104,14 @@ public class AdapterRequests extends RecyclerView.Adapter<AdapterRequests.ViewHo
 
     public class ViewHolderRequests extends RecyclerView.ViewHolder {
 
-        private TextView name;
+        private TextView name, deny;
         private MaterialButton acceptButton;
         private CircleImageView imageFriendRequest;
 
         public ViewHolderRequests(@NonNull View itemView) {
             super(itemView);
-
             name = itemView.findViewById(R.id.text_view_name_friend_request);
+            deny = itemView.findViewById(R.id.text_view_deny);
             acceptButton = itemView.findViewById(R.id.fab_accept);
             imageFriendRequest = itemView.findViewById(R.id.image_view_friend_request);
 

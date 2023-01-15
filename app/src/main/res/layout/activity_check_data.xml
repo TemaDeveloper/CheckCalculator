@@ -11,6 +11,7 @@
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/app_bar_height"
+        android:background="@color/purple_200"
         app:statusBarForeground="@color/purple_200">
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
@@ -18,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fitsSystemWindows="true"
-            app:contentScrim="?attr/colorPrimary"
+            app:contentScrim="@color/purple_200"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
             app:statusBarScrim="@color/purple_200">
 
@@ -69,6 +70,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 app:contentInsetStart="0dp"
+                android:background="@color/purple_200"
                 app:layout_collapseMode="pin">
 
                 <RelativeLayout
@@ -76,6 +78,7 @@
                     android:layout_height="match_parent">
 
                     <ImageView
+                        android:id="@+id/image_view_back"
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_centerVertical="true"
@@ -108,23 +111,51 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="@dimen/activity_vertical_margin"
+            android:layout_marginVertical="@dimen/activity_vertical_margin"
+            android:layout_marginHorizontal="8dp"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/nunito"
-                android:text="TeamAm!Bar.Test"
-                android:textColor="@color/title_text_color"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/nunito"
+                    android:text="Friends Addition"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/title_text_color"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:id="@+id/fab_add_friend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/fab_margin"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/nunito"
+                    android:text="Add Friend"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:borderWidth="0dp" />
+
+            </RelativeLayout>
+
+
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/activity_vertical_margin"
-                android:backgroundTint="@color/title_text_color"
+                android:layout_marginHorizontal="8dp"
                 android:elevation="8dp"
                 app:cardCornerRadius="14dp">
 
@@ -132,6 +163,7 @@
                     android:id="@+id/recycler_view_friends_in_team_check"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    tools:listitem="@layout/item_friend_in_team_check"
                     android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
                     android:layout_marginBottom="@dimen/activity_vertical_margin" />
 
@@ -141,6 +173,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="8dp"
                 android:fontFamily="@font/nunito"
                 android:text="@string/my_dishes"
                 android:textColor="@color/title_text_color"
@@ -150,6 +183,7 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycler_view_dishes"
                 android:layout_width="match_parent"
+                android:layout_marginHorizontal="8dp"
                 android:layout_height="match_parent"/>
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -162,6 +196,7 @@
                 android:layout_marginBottom="@dimen/activity_vertical_margin"/>
 
             <RelativeLayout
+                android:layout_marginHorizontal="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -194,6 +229,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="@dimen/activity_vertical_margin"
+                android:layout_marginHorizontal="8dp"
                 android:backgroundTint="@color/yellow"
                 android:elevation="8dp"
                 android:text="@string/finish_button"
